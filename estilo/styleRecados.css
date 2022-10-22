@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 99vh;  
+    background-image: url(../assets/imagens/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;    
+}
+
+header{
+    background-color: #02254457;
+    width: 100vw;
+    height: 5vh;
+    margin-top: 5px;
+    text-align: center;  
+    color: white;
+}
+
+#user{
+    color: #ffffff;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+#icon{
+    position: absolute;
+    top: 1vh;
+    right:2vw;    
+}
+
+#off{
+    position: absolute;
+    bottom: 2vh;
+    right:2vw;  
+}
+
+section {
+    height: 85vh;
+    padding: 5px;  
+    margin: 20px;    
+}
+
+form{
+    display: flex;
+    align-items: center;
+}
+
+form *{
+    margin-right: 10px;
+}
+
+#btnInserir{
+    border-radius: 10px;
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    color: white;
+    width: 100px;
+    height: 30px;
+    border-color: rgb(146, 146, 218);
+}
+
+#tabela{
+    margin-top: 40px;
+}
+
+#tabelaLista{
+    width: 95vw
+}
+
+#tabelaLista th {
+    background-color: #2927a39f;
+    color: white;
+    font-size: 1.3em;    
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2b7;    
+}
+
+tr:nth-child(odd) {
+    background-color: #0735998c;
+    color: #ffffff
+}
+
+tr, td {
+    border-bottom: 1px solid #ddd;
+    padding: 5px;
+}
+
+tr:hover {
+    background-color: #3b29df;
+    color: white
+}
+
+.acao{
+    padding: 0px 10px;
+}
+

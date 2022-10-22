@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilo/styleRecados.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <img id="icon" class="icon" src="./assets/imagens/notepad.png" alt="">
+        <h1>Gerenciamento de Recados</h1>
+        <img id="off" src="./assets/imagens/off.png" alt="" srcset="">
+        <span id="user">user</span>
+    </header>
+<main class="principal">      
+        <section class="atividade">
+            <form>
+                <label for="inputMotivo">Motivo: </label>
+                <input type="text" id="inputMotivo" name="inputMotivo">
+                <label for="inputDescricao">Descricao: </label>
+                <input type="text" id="inputDescricao" name="inputDescricao">
+                <input type="button" id="btnInserir" value="Inserir"/>
+            </form>
+            <br>
+            <div id="tabela">
+                <table id="tabelaLista">
+                    <tr>
+                      <th>Motivo</th>
+                      <th>Descrição</th>
+                      <th>Ação</th>
+                    </tr>
+                  </table>                
+            </div>
+            <br>
+        </section>
+    </main>
+</body>
+<script src="./js/recados.js"></script>
+    <script src="./js/vanilla-tilt.min.js"></script>   
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".icon"),{
+            max: 25,
+            glare: true,
+            "max-glare": 0.5,
+        });
+        </script>
+</html>

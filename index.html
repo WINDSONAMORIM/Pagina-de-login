@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilo/style.css">
+    <title>Login</title>
+</head>
+<body > 
+    <main class="form"> 
+        <nav>
+            <div id="navScroll"></div>
+            <button id="buttonLogin">ENTRAR</button>
+            <button id="buttonInscreverse">CADASTRO</button>            
+        </nav>    
+        <form id="formLogin">
+            <input type="e-mail" placeholder="Digite seu e-mail" id="emailLogin" name="emailLogin">
+            <input type="password" placeholder="Senha" id="senhaLogin" name="senhaLogin"> 
+            <div id="check">
+            <input type="checkbox" id="lembrar" name="lembrar" value="lembrar">
+            <label for="lembrar">Lembrar senha</label>            
+            </div>
+            <button id="btnLogar" type="submit">ENTRAR</button>
+        </form>
+
+        <form id="formCadastro">
+            <input type="e-mail" placeholder="Digite seu e-mail" id="emailCadastro" name="emailCadastro">
+            <input type="password" placeholder="Senha" id="senhaCadastro" name="senhaCadastro">
+            <input type="password" placeholder="Confirme sua senha" id="confirmaSenha" name="confirmaSenha">
+            <button id="btnCadastrar" type="submit">CADASTRAR</button>
+        </form>
+    </main>
+    <script src="./js/login.js"></script>
+</body>
+</html>
